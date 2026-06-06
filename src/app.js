@@ -14,7 +14,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(cors({
-  origin: ["http://localhost:5173", "qyoobai.swadextechnologies.in"], // ✅ your actual frontend URL
+  origin: [
+    "http://localhost:5173", 
+    "http://localhost:5174",
+    "https://newsportal.swadextechnologies.in"
+  ], // ✅ actual frontend URLs
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
 }));
