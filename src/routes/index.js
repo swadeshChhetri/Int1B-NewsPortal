@@ -10,6 +10,7 @@ import adminCategoryRoutes from "./adminCategoryRoutes.js";
 import newsletterRoutes from "./newsletterRoutes.js";
 import searchRoutes from "./searchRoutes.js";
 import adminCommentRoutes from "./adminCommentRoutes.js";
+import adminUserRoutes from "./adminUserRoutes.js";
 
 const router = express.Router();
 
@@ -26,6 +27,7 @@ router.use("/admin", adminRoutes);
 router.use("/admin/news", adminNewsRoutes);
 router.use("/admin/categories", adminCategoryRoutes);
 router.use("/admin/comments", adminCommentRoutes);
+router.use("/admin/users", adminUserRoutes);
 
 router.use("/", userRoutes);
 
